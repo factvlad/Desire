@@ -1,3 +1,33 @@
 $(function () {
+  $(".header__btn").on("click", function () {
+    $("div .rightside-menu").removeClass("rightside-menu--close");
+  });
 
-})
+  $(".rightside-menu__close").on("click", function () {
+    $(".rightside-menu").addClass("rightside-menu--close");
+  });
+});
+
+// function showRightMenuBar() {
+//   document.querySelector(".rightside-menu").classList.remove("rightside-menu--close");
+// }
+
+// document.querySelector(".header__btn").onclick = showRightMenuBar;
+
+//  function closeRightMenuBar() {
+//     document.querySelector(".rightside-menu").classList.add("rightside-menu--close");
+//   }
+
+//   document.querySelector(".rightside-menu__close").onclick = closeRightMenuBar;
+
+//   function showRightMenuBar() {
+//     document.querySelector(".rightside-menu").classList.remove("rightside-menu--close");
+//   }
+
+//   document.querySelector(".header__btn").addEventListener('click', showRightMenuBar);
+
+//  function closeRightMenuBar() {
+//     document.querySelector(".rightside-menu").classList.add("rightside-menu--close");
+//   }
+
+//   document.querySelector(".rightside-menu__close").addEventListener('click', closeRightMenuBar);
