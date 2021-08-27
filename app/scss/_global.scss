@@ -10,7 +10,9 @@ body {
   line-height: 27px;
   color: $default;
   overflow-x: hidden;
+  // overflow-y: hidden;
   min-width: 320px;
+  
 }
 
 .wrapper {
@@ -31,4 +33,5 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+  
 }
