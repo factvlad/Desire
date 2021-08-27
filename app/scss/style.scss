@@ -210,11 +210,11 @@
     margin-bottom: 17px;
     padding-bottom: 17px;
     &::after {
-      content: "";
+      content: " ";
       position: absolute;
       bottom: 0;
       right: 0;
-      max-width: 252px;
+      width: 252px;
       margin: 0 auto;
       height: 1px;
       background-color: #6d7278;
