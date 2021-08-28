@@ -279,3 +279,37 @@
     max-width: 585px;
   }
 }
+
+.new-collection {
+  text-align: center;
+  padding: 45px 0 150px;
+  &__title {
+    color: $title;
+    font-size: 36px;
+    line-height: 51px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 1px;
+      bottom: 0;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      background: #6d7278;
+    }
+  }
+  &__text {
+    max-width: 730px;
+    margin: 0 auto 30px;
+  }
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat (5, 1fr);
+  grid-gap: 30px;
+}
