@@ -8,8 +8,9 @@ $(function () {
   });
 
   $(".top__slider").slick({
-    dost: true,
+    dots: true,
     arrows: false,
+    fade:true,
   });
 });
 
