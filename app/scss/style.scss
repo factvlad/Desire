@@ -412,5 +412,8 @@
   }
   &__item {
     width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
