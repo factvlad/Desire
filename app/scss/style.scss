@@ -409,7 +409,7 @@
   }
   &__items-box {
     display: flex;
-    align-items: start;
+    align-items: flex-end;
     border-bottom: 2px solid rgba($title, 0.7);
     position: relative;
     &::after {
@@ -428,6 +428,24 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+    height: 100%;
+  }
+  &__item--producition {
+    margin-left: 317px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 20px;
+      width: 2px;
+      background-color: rgba($title, 0.7);
+    }
+  }
+  &__item--consultation,
+  &__item--producition {
+    padding-bottom: 30px;
   }
   &__item-title {
     margin-left: 13px;
