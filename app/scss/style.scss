@@ -409,11 +409,32 @@
   }
   &__items-box {
     display: flex;
+    align-items: start;
+    border-bottom: 2px solid rgba($title 0.7);
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $title;
+    }
   }
   &__item {
     width: 250px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+  }
+  &__item-title {
+    margin-left: 13px;
+    color: $title;
+    @extend %title-font;
+  }
+  &__item-text {
+    margin-top: 13px;
   }
 }
