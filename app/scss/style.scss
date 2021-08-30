@@ -641,6 +641,18 @@
 }
 
 .inspiration {
+  padding: 100px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/inspiration-bg.jpg);
+    height: 362px;
+    z-index: -1;
+  }
   &__inner {
     display: flex;
     justify-content: center;
@@ -673,5 +685,18 @@
   }
   &__content {
     max-width: 825px;
+  }
+  &__item {
+    color: $title;
+    @extend %title-font;
+    line-height: 23px;
+    margin-bottom: 33px;
+  }
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
   }
 }
