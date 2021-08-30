@@ -641,8 +641,8 @@
 }
 
 .inspiration {
-  padding: 100px;
-  position: relative;
+  padding-top: 100px;
+ position: relative;
   &::after {
     content: "";
     position: absolute;
@@ -650,8 +650,7 @@
     left: 0;
     right: 0;
     background-image: url(../images/inspiration-bg.jpg);
-    // height: 66%;
-    height: 414px;
+    height: 362px;
     z-index: -1;
   }
   &__inner {
