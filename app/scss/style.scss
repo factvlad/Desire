@@ -650,10 +650,8 @@
     left: 0;
     right: 0;
     background-image: url(../images/inspiration-bg.jpg);
-    height: 66%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+    // height: 66%;
+    height: 414px;
     z-index: -1;
   }
   &__inner {
@@ -706,5 +704,6 @@
     height: 2px;
     border-radius: 4px;
     background-color: $title;
+    margin-top: -2px;
   }
 }
