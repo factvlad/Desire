@@ -1,7 +1,27 @@
+@media (max-width: 992px) {
+  .footer {
+    &__info {
+      width: 380px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .header {
     &__btn {
       display: none;
+    }
+    .footer {
+      &__inner {
+        flex-wrap: wrap;
+      }
+      &__info {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      &__info-text {
+        max-width: 100%;
+      }
     }
   }
 
