@@ -239,14 +239,18 @@
   }
   &__item::after {
     content: "/";
-    margin-left: -4px;
-    margin-right: 4px;
+    position: absolute;
+    padding-right: 8px;
   }
   &__item:last-child::after {
     display: none;
   }
   &__list {
     display: flex;
+    overflow-x: auto;
+  }
+  &__item{
+    position: relative;
   }
 }
 
