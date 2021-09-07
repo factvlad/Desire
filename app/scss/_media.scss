@@ -11,18 +11,6 @@
     &__btn {
       display: none;
     }
-    .footer {
-      &__inner {
-        flex-wrap: wrap;
-      }
-      &__info {
-        width: 100%;
-        margin-bottom: 50px;
-      }
-      &__info-text {
-        max-width: 100%;
-      }
-    }
   }
 
   .menu {
@@ -36,6 +24,20 @@
 
   .logo {
     margin: 0;
+  }
+
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__info {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    &__info-text {
+      max-width: 100%;
+    }
   }
 }
 
