@@ -240,7 +240,6 @@
   &__item::after {
     content: "/";
     position: absolute;
-    padding-right: 8px;
   }
   &__item:last-child::after {
     display: none;
@@ -249,8 +248,9 @@
     display: flex;
     overflow-x: auto;
   }
-  &__item{
+  &__item {
     position: relative;
+    padding-right: 8px;
   }
 }
 
