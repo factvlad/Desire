@@ -27,6 +27,28 @@ $(function () {
     arrows: false,
     slidesToShow: 10,
     slidesToScroll: 10,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+        }
+      },
+      {
+        breakpoint: 1511,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+        }
+      },{
+        breakpoint: 480,
+        settings: {
+          
+        }
+      }
+
+    ]
   });
 
   $(".article-slider__box").slick({
