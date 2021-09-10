@@ -11,6 +11,10 @@ $(function () {
     $(".menu").toggleClass("menu--open");
   });
 
+  if ($(window).width() < 651) {
+    $(".works-path__item--measuring").appendTo($(".works-path__items-box"));
+  }
+
   $(".top__slider").slick({
     dots: true,
     arrows: false,
@@ -26,15 +30,11 @@ $(function () {
   });
 
   $(".article-slider__box").slick({
-    prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-left"><img src="images/arrow-slide-left.svg" alt="arrow-slide"></button>',
-    nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-right"><img src="images/arrow-slide-right.svg" alt="arrow-slide"></button>',
+    prevArrow:
+      '<button type="button" class="article-slider__arrow article-slider__arrow-left"><img src="images/arrow-slide-left.svg" alt="arrow-slide"></button>',
+    nextArrow:
+      '<button type="button" class="article-slider__arrow article-slider__arrow-right"><img src="images/arrow-slide-right.svg" alt="arrow-slide"></button>',
   });
-
-
-
- 
-
-
 
   var mixer = mixitup(".gallery__inner", {
     load: {
