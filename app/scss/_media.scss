@@ -53,7 +53,7 @@
   .collection {
     grid-template-columns: repeat(2, 1fr);
   }
-  .work-path {
+  .works-path {
     &__item {
       width: 350px;
     }
@@ -112,6 +112,14 @@
       margin-left: 100px;
     }
   }
+  .gallery {
+    &__buttons {
+      display: grid;
+    }
+    &__btn {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 @media (max-width: 650px) {
@@ -151,6 +159,20 @@
     }
     &__item {
       width: 100%;
+    }
+  }
+  .blog-box {
+    &__items {
+      display: block;
+    }
+    &__img-link {
+      display: block;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__item {
+      margin-bottom: 20px;
     }
   }
 }
@@ -213,10 +235,25 @@
     font-size: 28px;
     line-height: 36px;
   }
+  .blog-box {
+    &__item-title {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
   .works-path {
     &__item-title {
       font-size: 16px;
       line-height: 27px;
+    }
+  }
+  .gallery {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item:first-child {
+      grid-column: 1;
+      grid-row: 1;
     }
   }
 }
