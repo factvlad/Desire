@@ -16,6 +16,9 @@
   .map {
     margin-top: 0;
   }
+  .rightside-menu {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -32,6 +35,9 @@
     &__img {
       height: 240px;
     }
+  }
+  .rightside-menu {
+    display: none;
   }
 }
 @media (max-width: 1040px) {
@@ -52,6 +58,9 @@
     margin-left: 0;
     order: -1;
     margin-bottom: 50px;
+  }
+  .rightside-menu {
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -253,6 +262,9 @@
   .slick-dots li {
     margin: 0 5px;
   }
+  .rightside-menu {
+    display: none;
+  }
 }
 @media (max-width: 540px) {
   .menu__list-link--active::after {
@@ -403,9 +415,12 @@
     &__comments-info {
       margin-top: -46px;
     }
-    &__reply{
+    &__reply {
       margin-left: 0;
     }
+  }
+  .rightside-menu {
+    display: none;
   }
 }
 
@@ -436,5 +451,8 @@
   }
   .blog-one__item blockquote {
     padding: 0 20px;
+  }
+  .rightside-menu {
+    display: none;
   }
 }
